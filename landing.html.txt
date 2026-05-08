@@ -1,0 +1,274 @@
+
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Фейк Госуслуги — реалистичный генератор документов онлайн | ГосFake</title>
+<meta name="description" content="Фейк Госуслуги — развлекательный онлайн-сервис для создания реалистичных цифровых документов: паспорт РФ, СНИЛС, ИНН, ОМС, водительское удостоверение. Вход через Telegram за 3 секунды.">
+<meta name="keywords" content="фейк госуслуги, fake госуслуги, генератор документов, фейк паспорт, фейк снилс, фейк инн, фейк омс, фейк водительское удостоверение, госуслуги пранк, пародия госуслуги, gosfake, фейковые документы онлайн, генератор паспорта, цифровые документы">
+<meta name="robots" content="index, follow">
+<meta name="author" content="ГосFake">
+<meta name="theme-color" content="#0d4cd3">
+<link rel="canonical" href="https://gosfake.lol/">
+
+<!-- Open Graph -->
+<meta property="og:title" content="Фейк Госуслуги — реалистичный генератор документов | ГосFake">
+<meta property="og:description" content="Развлекательный сервис создания цифровых документов в стиле Госуслуг. Паспорт, СНИЛС, ИНН, ОМС, ВУ. Вход через Telegram.">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://gosfake.lol/">
+<meta property="og:image" content="https://gosfake.lol/static/android-chrome-192x192.png">
+<meta property="og:locale" content="ru_RU">
+<meta property="og:site_name" content="ГосFake">
+
+<!-- Twitter Card -->
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="Фейк Госуслуги — генератор документов онлайн | ГосFake">
+<meta name="twitter:description" content="Развлекательный сервис создания цифровых документов: паспорт РФ, СНИЛС, ИНН, ОМС, ВУ.">
+<meta name="twitter:image" content="https://gosfake.lol/static/android-chrome-192x192.png">
+
+<link rel="icon" href="/static/favicon.ico" type="image/x-icon">
+<link rel="apple-touch-icon" href="/static/apple-touch-icon.png">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+<style>
+*{margin:0;padding:0;box-sizing:border-box}
+body{font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;background:#fff;color:#1a1a2e;min-height:100vh}
+.header{position:fixed;top:0;left:0;right:0;z-index:100;background:rgba(255,255,255,0.92);backdrop-filter:blur(20px);-webkit-backdrop-filter:blur(20px);border-bottom:1px solid rgba(0,0,0,0.06);padding:0 24px;height:64px;display:flex;align-items:center;justify-content:space-between}
+.logo{display:flex;align-items:center;gap:10px;text-decoration:none;color:#1a1a2e}
+.logo img{width:32px;height:32px;border-radius:8px}
+.logo span{font-size:18px;font-weight:700}
+.btn-enter{background:#0066FF;color:#fff;border:none;padding:10px 24px;border-radius:10px;font-size:14px;font-weight:600;cursor:pointer;text-decoration:none;transition:all .2s;display:flex;align-items:center;gap:8px}
+.btn-enter:hover{background:#0052cc;transform:translateY(-1px);box-shadow:0 4px 16px rgba(0,102,255,0.25)}
+.hero{padding:140px 24px 80px;text-align:center;max-width:680px;margin:0 auto}
+.hero-badge{display:inline-flex;align-items:center;gap:6px;background:#f0f4ff;color:#0066FF;padding:6px 16px;border-radius:20px;font-size:13px;font-weight:600;margin-bottom:24px}
+.hero h1{font-size:48px;font-weight:800;line-height:1.1;margin-bottom:20px;color:#0d0d1a;letter-spacing:-0.5px}
+.hero h1 span{color:#0066FF}
+.hero p{font-size:18px;color:#6b7280;max-width:480px;margin:0 auto 36px;line-height:1.6}
+.hero-buttons{display:flex;gap:12px;justify-content:center;flex-wrap:wrap}
+.btn-primary{background:#0066FF;color:#fff;border:none;padding:16px 36px;border-radius:14px;font-size:16px;font-weight:700;cursor:pointer;text-decoration:none;transition:all .25s;display:inline-flex;align-items:center;gap:8px}
+.btn-primary:hover{background:#0052cc;transform:translateY(-2px);box-shadow:0 8px 24px rgba(0,102,255,0.3)}
+.btn-outline{background:transparent;color:#1a1a2e;border:2px solid #e5e7eb;padding:14px 32px;border-radius:14px;font-size:16px;font-weight:600;cursor:pointer;text-decoration:none;transition:all .25s}
+.btn-outline:hover{border-color:#0066FF;color:#0066FF;background:#f8faff}
+.trust{padding:40px 24px;text-align:center}
+.trust-items{display:flex;justify-content:center;gap:40px;flex-wrap:wrap}
+.trust-item{display:flex;align-items:center;gap:8px;color:#9ca3af;font-size:14px;font-weight:500}
+.trust-item i{font-size:18px;color:#0066FF}
+.features{padding:80px 24px;max-width:960px;margin:0 auto}
+.section-label{text-align:center;font-size:13px;font-weight:700;text-transform:uppercase;letter-spacing:2px;color:#0066FF;margin-bottom:12px}
+.section-title{text-align:center;font-size:36px;font-weight:800;margin-bottom:48px;color:#0d0d1a}
+.features-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:20px}
+.feature-card{background:#f9fafb;border:1px solid #f0f0f5;border-radius:20px;padding:32px;transition:all .3s}
+.feature-card:hover{transform:translateY(-4px);box-shadow:0 12px 40px rgba(0,0,0,0.06);border-color:#e0e7ff}
+.feature-emoji{font-size:40px;margin-bottom:16px;display:block}
+.feature-card h3{font-size:18px;font-weight:700;margin-bottom:8px;color:#0d0d1a}
+.feature-card p{font-size:14px;color:#6b7280;line-height:1.6}
+.showcase{padding:80px 24px;background:#f9fafb}
+.showcase-inner{max-width:960px;margin:0 auto}
+.doc-pills{display:flex;gap:12px;justify-content:center;flex-wrap:wrap;margin-bottom:40px}
+.doc-pill{background:#fff;border:2px solid #e5e7eb;border-radius:12px;padding:12px 20px;font-size:14px;font-weight:600;color:#374151;transition:all .2s;display:flex;align-items:center;gap:8px}
+.doc-pill:hover{border-color:#0066FF;color:#0066FF}
+.pricing{padding:80px 24px;max-width:960px;margin:0 auto}
+.pricing-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(270px,1fr));gap:20px}
+.price-card{background:#fff;border:2px solid #f0f0f5;border-radius:24px;padding:36px;text-align:center;position:relative;transition:all .3s}
+.price-card:hover{transform:translateY(-4px);box-shadow:0 16px 48px rgba(0,0,0,0.06)}
+.price-card.featured{border-color:#0066FF;background:linear-gradient(180deg,#f8faff 0%,#fff 100%)}
+.price-badge{position:absolute;top:-14px;left:50%;transform:translateX(-50%);background:#0066FF;color:#fff;padding:5px 20px;border-radius:20px;font-size:12px;font-weight:700}
+.price-card h3{font-size:22px;font-weight:800;margin-bottom:8px;color:#0d0d1a}
+.price-amount{font-size:40px;font-weight:800;color:#0d0d1a;margin-bottom:4px}
+.price-amount small{font-size:14px;color:#9ca3af;font-weight:400}
+.price-desc{font-size:14px;color:#9ca3af;margin-bottom:24px}
+.price-features{list-style:none;text-align:left;margin-bottom:28px}
+.price-features li{padding:8px 0;font-size:14px;color:#374151;display:flex;align-items:center;gap:10px;border-bottom:1px solid #f5f5f7}
+.price-features li:last-child{border-bottom:none}
+.price-features li i.fa-check{color:#10b981}
+.price-features li i.fa-times{color:#d1d5db}
+.price-btn{display:block;width:100%;padding:14px;border-radius:12px;font-size:15px;font-weight:700;cursor:pointer;border:none;transition:all .2s;text-decoration:none;text-align:center}
+.price-btn-primary{background:#0066FF;color:#fff}
+.price-btn-primary:hover{background:#0052cc}
+.price-btn-secondary{background:#f0f4ff;color:#0066FF}
+.price-btn-secondary:hover{background:#e0e7ff}
+.cta-section{padding:80px 24px;background:linear-gradient(135deg,#0066FF 0%,#004dd9 100%);text-align:center}
+.cta-section h2{font-size:32px;font-weight:800;color:#fff;margin-bottom:12px}
+.cta-section p{font-size:16px;color:rgba(255,255,255,0.8);margin-bottom:28px}
+.btn-white{background:#fff;color:#0066FF;border:none;padding:16px 40px;border-radius:14px;font-size:16px;font-weight:700;cursor:pointer;text-decoration:none;transition:all .25s;display:inline-flex;align-items:center;gap:8px}
+.btn-white:hover{transform:translateY(-2px);box-shadow:0 8px 24px rgba(0,0,0,0.15)}
+.faq{padding:80px 24px;max-width:700px;margin:0 auto}
+.faq-item{border-bottom:1px solid #f0f0f5;padding:20px 0}
+.faq-q{font-size:16px;font-weight:600;cursor:pointer;display:flex;justify-content:space-between;align-items:center;color:#0d0d1a;transition:color .2s}
+.faq-q:hover{color:#0066FF}
+.faq-q i{transition:transform .3s;color:#9ca3af;font-size:14px}
+.faq-a{font-size:14px;color:#6b7280;line-height:1.7;max-height:0;overflow:hidden;transition:max-height .3s,padding .3s}
+.faq-item.open .faq-a{max-height:200px;padding-top:12px}
+.faq-item.open .faq-q i{transform:rotate(180deg)}
+.footer{padding:40px 24px;text-align:center;border-top:1px solid #f0f0f5;color:#9ca3af;font-size:13px}
+@media(max-width:640px){.hero h1{font-size:32px}.hero p{font-size:16px}.section-title{font-size:28px}.trust-items{gap:20px}}
+</style>
+</head>
+<body>
+<header class="header">
+  <a href="/" class="logo"><img src="/static/android-chrome-192x192.png" alt="Logo"><span>ГосFake</span></a>
+  <a href="/login" class="btn-enter"><i class="fab fa-telegram-plane"></i> Войти</a>
+</header>
+<section class="hero">
+  <div class="hero-badge"><i class="fas fa-theater-masks"></i> Развлекательный сервис</div>
+  <h1>Фейк Госуслуги —<br>документы в <span>одном клике</span></h1>
+  <p>Развлекательный онлайн-сервис для создания реалистичных цифровых документов: паспорт РФ, СНИЛС, ИНН, ОМС, водительское удостоверение. Вход через Telegram за 3 секунды.</p>
+  <div class="hero-buttons">
+    <a href="/login" class="btn-primary"><i class="fab fa-telegram-plane"></i> Начать бесплатно</a>
+    <a href="#pricing" class="btn-outline">Тарифы →</a>
+  </div>
+</section>
+<section class="trust">
+  <div class="trust-items">
+    <div class="trust-item"><i class="fas fa-bolt"></i> Мгновенный вход</div>
+    <div class="trust-item"><i class="fas fa-mobile-alt"></i> Mobile-first</div>
+    <div class="trust-item"><i class="fas fa-star"></i> Точная копия</div>
+  </div>
+</section>
+<section class="features" id="features">
+  <div class="section-label">Возможности</div>
+  <h2 class="section-title">Всё что нужно</h2>
+  <div class="features-grid">
+    <div class="feature-card"><span class="feature-emoji">📄</span><h3>Реалистичные документы</h3><p>Паспорт, СНИЛС, ИНН, ОМС и ВУ — каждый документ с точной детализацией.</p></div>
+    <div class="feature-card"><span class="feature-emoji">⚡</span><h3>Вход за 3 секунды</h3><p>Авторизация через Telegram-бота — никаких паролей и регистраций.</p></div>
+    <div class="feature-card"><span class="feature-emoji">📱</span><h3>Как настоящее приложение</h3><p>Точная копия интерфейса Госуслуг. Анимации, переходы, stories — всё как в оригинале.</p></div>
+  </div>
+</section>
+<section class="showcase">
+  <div class="showcase-inner">
+    <div class="section-label">Документы</div>
+    <h2 class="section-title">Что входит</h2>
+    <div class="doc-pills">
+      <div class="doc-pill"><i class="fas fa-id-card" style="color:#D64545"></i> Паспорт РФ</div>
+      <div class="doc-pill"><i class="fas fa-file-alt" style="color:#4CAF50"></i> СНИЛС</div>
+      <div class="doc-pill"><i class="fas fa-file-invoice" style="color:#FF9800"></i> ИНН</div>
+      <div class="doc-pill"><i class="fas fa-heartbeat" style="color:#3D7BC7"></i> Полис ОМС</div>
+      <div class="doc-pill"><i class="fas fa-car" style="color:#9C27B0"></i> Водительское уд.</div>
+    </div>
+  </div>
+</section>
+<section class="pricing" id="pricing">
+  <div class="section-label">Тарифы</div>
+  <h2 class="section-title">Выберите план</h2>
+  <div class="pricing-grid">
+    <div class="price-card">
+      <h3>Free</h3>
+      <div class="price-amount">0₽ <small>навсегда</small></div>
+      <div class="price-desc">Для знакомства</div>
+      <ul class="price-features">
+        <li><i class="fas fa-check"></i> Паспорт (2 просмотра/день)</li>
+        <li><i class="fas fa-times"></i> СНИЛС, ОМС</li>
+        <li><i class="fas fa-times"></i> ИНН, ВУ</li>
+        <li><i class="fas fa-times"></i> 2-я версия паспорта</li>
+        <li><i class="fas fa-times"></i> Загрузка фото</li>
+      </ul>
+      <a href="/login" class="price-btn price-btn-secondary">Начать</a>
+    </div>
+    <div class="price-card featured">
+      <div class="price-badge">ПОПУЛЯРНЫЙ</div>
+      <h3>Pro</h3>
+      <div class="price-amount">99 ₽ <small>в месяц</small></div>
+      <div class="price-desc">Для ежедневного использования</div>
+      <ul class="price-features">
+        <li><i class="fas fa-check"></i> Паспорт (безлимит)</li>
+        <li><i class="fas fa-check"></i> СНИЛС (5/день)</li>
+        <li><i class="fas fa-check"></i> ОМС (5/день)</li>
+        <li><i class="fas fa-check"></i> 2-я версия паспорта</li>
+        <li><i class="fas fa-times"></i> ИНН, ВУ</li>
+        <li><i class="fas fa-times"></i> Загрузка фото</li>
+      </ul>
+      <a href="/login" class="price-btn price-btn-primary">Получить</a>
+    </div>
+    <div class="price-card">
+      <h3>Premium</h3>
+      <div class="price-amount">200 ₽ <small>в месяц</small></div>
+      <div class="price-desc">Полный доступ ко всему</div>
+      <ul class="price-features">
+        <li><i class="fas fa-check"></i> Паспорт (безлимит)</li>
+        <li><i class="fas fa-check"></i> СНИЛС, ОМС (безлимит)</li>
+        <li><i class="fas fa-check"></i> ИНН, ВУ (безлимит)</li>
+        <li><i class="fas fa-check"></i> 2-я версия паспорта</li>
+        <li><i class="fas fa-check"></i> Загрузка фото</li>
+        <li><i class="fas fa-check"></i> Приоритетная поддержка</li>
+      </ul>
+      <a href="/login" class="price-btn price-btn-secondary">Получить</a>
+    </div>
+  </div>
+</section>
+<section class="cta-section">
+  <h2>Готовы начать?</h2>
+  <p>Бесплатная регистрация за 3 секунды через Telegram</p>
+  <a href="/login" class="btn-white"><i class="fab fa-telegram-plane"></i> Войти через Telegram</a>
+</section>
+<section class="faq" id="faq">
+  <div class="section-label">FAQ</div>
+  <h2 class="section-title" style="text-align:left;font-size:28px;margin-bottom:24px">Вопросы и ответы</h2>
+  <div class="faq-item"><div class="faq-q" onclick="this.parentElement.classList.toggle('open')">Что такое фейк Госуслуги? <i class="fas fa-chevron-down"></i></div><div class="faq-a">ГосFake — это развлекательный пародийный сервис, имитирующий интерфейс приложения «Госуслуги». Все данные вымышлены и вводятся самим пользователем. Сервис не имеет отношения к реальным государственным системам.</div></div>
+  <div class="faq-item"><div class="faq-q" onclick="this.parentElement.classList.toggle('open')">Это законно? <i class="fas fa-chevron-down"></i></div><div class="faq-a">Да. Сервис носит исключительно развлекательный и пародийный характер. Мы не подделываем документы — все данные вводятся пользователем вручную и являются вымышленными. Сервис не связан с государственными органами и не создаёт юридически значимых документов. Использование сервиса для противоправных целей запрещено — ответственность несёт пользователь.</div></div>
+  <div class="faq-item"><div class="faq-q" onclick="this.parentElement.classList.toggle('open')">Как авторизоваться в фейк Госуслугах? <i class="fas fa-chevron-down"></i></div><div class="faq-a">Нажмите «Войти через Telegram» — перейдёте в бота, подтвердите и вернётесь залогиненным.</div></div>
+  <div class="faq-item"><div class="faq-q" onclick="this.parentElement.classList.toggle('open')">Какие документы можно создать? <i class="fas fa-chevron-down"></i></div><div class="faq-a">Паспорт РФ (две версии), СНИЛС, ИНН, полис ОМС и водительское удостоверение — каждый документ выглядит реалистично и повторяет интерфейс настоящего приложения Госуслуги.</div></div>
+  <div class="faq-item"><div class="faq-q" onclick="this.parentElement.classList.toggle('open')">Безопасно ли хранить данные? <i class="fas fa-chevron-down"></i></div><div class="faq-a">Все данные зашифрованы AES-256-GCM. Даже при утечке базы их невозможно прочитать.</div></div>
+  <div class="faq-item"><div class="faq-q" onclick="this.parentElement.classList.toggle('open')">Для чего можно использовать фейк Госуслуги? <i class="fas fa-chevron-down"></i></div><div class="faq-a">Для развлечения, пранков среди друзей, создания контента для социальных сетей, изучения интерфейсов мобильных приложений. Использование в мошеннических целях строго запрещено.</div></div>
+</section>
+
+<!-- Disclaimer -->
+<section style="padding:40px 24px;max-width:700px;margin:0 auto">
+  <div style="background:#f9fafb;border:1px solid #e5e7eb;border-radius:16px;padding:24px;text-align:center">
+    <div style="font-size:28px;margin-bottom:12px">⚠️</div>
+    <h3 style="font-size:16px;font-weight:700;color:#0d0d1a;margin-bottom:8px">Правовая информация</h3>
+    <p style="font-size:13px;color:#6b7280;line-height:1.7;margin-bottom:12px">
+      Данный сервис является <strong>развлекательным пародийным проектом</strong> и не имеет никакого отношения к порталу «Госуслуги» или каким-либо государственным органам Российской Федерации. 
+      Все данные, отображаемые в сервисе, являются <strong>вымышленными</strong> и вводятся самим пользователем.
+    </p>
+    <p style="font-size:13px;color:#6b7280;line-height:1.7;margin-bottom:12px">
+      Сервис <strong>не создаёт, не подделывает и не распространяет</strong> реальные документы. Результаты работы сервиса не имеют юридической силы и не могут быть использованы как документы, удостоверяющие личность.
+    </p>
+    <p style="font-size:12px;color:#9ca3af;line-height:1.6">
+      Используя сервис, вы соглашаетесь, что он предназначен исключительно для развлечения. Администрация не несёт ответственности за неправомерное использование. Любое использование в противоправных целях запрещено — ответственность полностью лежит на пользователе.
+    </p>
+  </div>
+</section>
+
+<footer class="footer">
+  <p>&copy; 2026 ГосFake. Развлекательный сервис. Все данные вымышлены и не являются реальными документами.</p>
+  <p style="margin-top:6px;font-size:11px;color:#c0c0c0">Не является государственным сервисом. Не связан с порталом «Госуслуги».</p>
+</footer>
+<style id="portrait-lock-style">
+@media screen and (orientation: landscape) and (max-width: 1024px) {
+  body > *:not(#portrait-lock-overlay) { visibility: hidden !important; pointer-events: none !important; }
+  #portrait-lock-overlay { display: flex !important; }
+}
+#portrait-lock-overlay {
+  display: none;
+  position: fixed; inset: 0; z-index: 2147483647;
+  background: #0d0d1a; color: #fff;
+  flex-direction: column; align-items: center; justify-content: center;
+  padding: 24px; text-align: center;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+}
+#portrait-lock-overlay .plo-icon {
+  width: 80px; height: 80px; margin-bottom: 20px;
+  animation: plo-rotate 2.2s cubic-bezier(.5,.1,.5,.9) infinite;
+}
+#portrait-lock-overlay .plo-title { font-size: 18px; font-weight: 700; margin-bottom: 8px; letter-spacing: -.3px; }
+#portrait-lock-overlay .plo-text  { font-size: 14px; color: #9ca3af; line-height: 1.5; max-width: 280px; }
+@keyframes plo-rotate {
+  0%,15% { transform: rotate(-90deg); }
+  50%,65% { transform: rotate(0deg); }
+  100% { transform: rotate(-90deg); }
+}
+</style>
+<div id="portrait-lock-overlay" role="alertdialog" aria-label="Поверните устройство в портретную ориентацию">
+  <svg class="plo-icon" viewBox="0 0 24 24" fill="none" stroke="#0A84FF" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+    <rect x="5" y="2" width="14" height="20" rx="2.5"/>
+    <line x1="12" y1="18" x2="12" y2="18.01"/>
+  </svg>
+  <div class="plo-title">Поверните устройство</div>
+  <div class="plo-text">Приложение работает только в портретной ориентации</div>
+</div>
+<script>(function(){try{
+  if(screen&&screen.orientation&&screen.orientation.lock){
+    screen.orientation.lock('portrait').catch(function(){});
+  }
+}catch(e){}})();</script></body>
+</html>
